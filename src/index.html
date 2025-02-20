@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Employee Management System</h1>
+        <button type="button" class="addEmployeebtn">Add Employee</button>
+      </header>
+
+      <div class="employee">
+        <div class="employee__names">
+          <span class="employee__names--title">Employee list</span>
+          <div class="employee__names--list"></div>
+        </div>
+        <div class="employee__details">
+          <span class="employee__details--title">Employee Details</span>
+          <div class="employee__details--single"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adding a new employee -->
+    <div class="addEmployee">
+      <form class="addEmployee_create">
+        Add a new Employee
+        <div>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="lastName" placeholder="Last Name" required />
+        </div>
+        <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="number"
+          name="contactNumber"
+          placeholder="Contact"
+          required
+        />
+        <input type="number" name="salary" placeholder="Salary" required />
+        <input type="text" name="address" placeholder="Address" required />
+        <input
+          type="date"
+          name="dob"
+          placeholder="Date of Birth"
+          class="addEmployee_create--dob"
+          required
+        />
+        <input
+          type="submit"
+          class="addEmployee_create--submit"
+          value="Submit"
+        />
+      </form>
+    </div>
+
+    <script src="./styles.css" type="styles"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
